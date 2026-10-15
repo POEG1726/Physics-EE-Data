@@ -7,4 +7,4 @@ Validated all 71 waveform blocks, formal coverage, exact regeneration of seven n
 independent fits, all embedded HTML samples and all alignment export transforms.
 Executed every documented generator, syntax checks, local-link checks and browser interactions/exports.
 Corrected missing subscript glyphs and a harmless favicon request; clean page reload has zero console messages.
-Prepared the publication commit; final hash and clean-history audit follow in the recording commit.
+Publication committed as `d61eaea782b96a0a59f07ddba897c65f0d9ccfcf`. The post-commit scan passed all reachable text blobs and commit identities. This recording commit closes the preparation log.
