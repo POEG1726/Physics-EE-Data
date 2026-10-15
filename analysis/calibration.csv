@@ -1,0 +1,2 @@
+v_min,v_max,v_pp,width_ns_mean,width_ns_sd,width_ns_min,width_ns_max,period_ns_median,frequency_mhz,sample_interval_ns
+-1.014583,0.9927084,2.0072914,20.00745439,0.01654068104,19.98880529,20.03038208,400,2.5,0.5

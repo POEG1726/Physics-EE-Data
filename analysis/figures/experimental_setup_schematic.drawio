@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mxfile host="app.diagrams.net" modified="2026-08-30T00:00:00.000Z" agent="Codex" version="28.2.8">
+  <diagram id="experimental-setup" name="Experimental setup">
+    <mxGraphModel adaptiveColors="auto" dx="1220" dy="700" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title" value="&lt;b&gt;Experimental setup: transmission-line reflection measurement&lt;/b&gt;" style="text;html=1;align=center;fontSize=18;fontColor=#1F2937;" vertex="1" parent="1">
+          <mxGeometry x="150" y="25" width="900" height="30" as="geometry"/>
+        </mxCell>
+        <mxCell id="generator" value="&lt;b&gt;Signal generator&lt;/b&gt;&lt;br&gt;50 Ω source" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#DAE8FC;strokeColor=#6C8EBF;fontColor=#1F2937;" vertex="1" parent="1">
+          <mxGeometry x="40" y="180" width="160" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="rg316" value="RG316&lt;br&gt;20 cm" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F5F5F5;strokeColor=#666666;fontColor=#1F2937;" vertex="1" parent="1">
+          <mxGeometry x="250" y="190" width="130" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="tee" value="&lt;b&gt;T&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFF2CC;strokeColor=#D6B656;fontColor=#1F2937;fontSize=16;" vertex="1" parent="1">
+          <mxGeometry x="430" y="190" width="50" height="50" as="geometry"/>
+        </mxCell>
+        <mxCell id="tee-label" value="BNC T-junction" style="text;html=1;align=center;fontColor=#1F2937;" vertex="1" parent="1">
+          <mxGeometry x="390" y="255" width="130" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="scope" value="&lt;b&gt;Oscilloscope&lt;/b&gt;&lt;br&gt;CH4, 1 MΩ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#82B366;fontColor=#1F2937;" vertex="1" parent="1">
+          <mxGeometry x="375" y="340" width="160" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="test-cable" value="&lt;b&gt;Test cable&lt;/b&gt;&lt;br&gt;length L; Z₀ = 50 Ω or 75 Ω" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#E1D5E7;strokeColor=#9673A6;fontColor=#1F2937;" vertex="1" parent="1">
+          <mxGeometry x="560" y="165" width="330" height="90" as="geometry"/>
+        </mxCell>
+        <mxCell id="load" value="&lt;b&gt;Load&lt;/b&gt;&lt;br&gt;R&lt;sub&gt;L&lt;/sub&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#F8CECC;strokeColor=#B85450;fontColor=#1F2937;" vertex="1" parent="1">
+          <mxGeometry x="960" y="180" width="140" height="70" as="geometry"/>
+        </mxCell>
+        <mxCell id="reference-plane" value="Measurement reference plane" style="shape=line;html=1;strokeColor=#7F8C8D;dashed=1;strokeWidth=2;labelPosition=above;verticalLabelPosition=top;align=center;fontColor=#34495E;" vertex="1" parent="1">
+          <mxGeometry x="505" y="110" width="1" height="190" as="geometry"/>
+        </mxCell>
+        <mxCell id="length-label" value="L measured: T-junction reference plane → load termination" style="text;html=1;align=center;fontColor=#34495E;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="560" y="300" width="330" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="incident" value="incident pulse →" style="text;html=1;align=right;fontColor=#0072B2;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="175" width="260" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="reflected" value="← reflected pulse" style="text;html=1;align=left;fontColor=#D55E00;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="590" y="225" width="260" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-generator-rg316" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=none;strokeWidth=2;strokeColor=#34495E;" edge="1" source="generator" target="rg316" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-rg316-tee" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=none;strokeWidth=2;strokeColor=#34495E;" edge="1" source="rg316" target="tee" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-tee-cable" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=none;strokeWidth=2;strokeColor=#34495E;" edge="1" source="tee" target="test-cable" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-cable-load" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=none;strokeWidth=2;strokeColor=#34495E;" edge="1" source="test-cable" target="load" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="e-tee-scope" style="edgeStyle=orthogonalEdgeStyle;rounded=1;html=1;endArrow=none;strokeWidth=2;strokeColor=#34495E;" edge="1" source="tee" target="scope" parent="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

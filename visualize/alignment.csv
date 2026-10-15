@@ -1,0 +1,12 @@
+trace_id,label,file,group,load,reference_id,baseline_mode,window_start_ns,window_end_ns,global_time_shift_ns,global_voltage_shift_v,time_shift_ns,voltage_shift_v,baseline_v
+rg58_10_short_rg58_10m_short,RG58 10m short,RG58-10M-short.csv,RG58 10m,short,rg58_10_120_ohm_rg58_10m_120ohm,corrected,-100,250,0,0,-193.5,0,0.08332291937000001
+rg58_10_6_ohm_rg58_10m_6ohm,RG58 10m 6 ohm,rg58-10m-6ohm.csv,RG58 10m,6 ohm,rg58_10_120_ohm_rg58_10m_120ohm,corrected,-100,250,0,0,-14,0,-0.01885937491999994
+rg58_10_12_ohm_rg58_10m_12ohm,RG58 10m 12 ohm,RG58-10M-12OHM.csv,RG58 10m,12 ohm,rg58_10_120_ohm_rg58_10m_120ohm,corrected,-100,250,0,0,-13,0,-0.10068228734499993
+rg58_10_22_ohm_rg58_10m_22ohm,RG58 10m 22 ohm,rg58-10m-22ohm.csv,RG58 10m,22 ohm,rg58_10_120_ohm_rg58_10m_120ohm,corrected,-100,250,0,0,-12,0,-0.20632813213500012
+rg58_10_33_ohm_rg58_10m_33ohm,RG58 10m 33 ohm,rg58-10m-33ohm.csv,RG58 10m,33 ohm,rg58_10_120_ohm_rg58_10m_120ohm,corrected,-100,250,0,0,-10.5,0,-0.30405210036499997
+rg58_10_50_ohm_rg58_10m_50ohm,RG58 10m 50 ohm,rg58-10m-50ohm.csv,RG58 10m,50 ohm,rg58_10_120_ohm_rg58_10m_120ohm,corrected,-100,250,0,0,-10,0,-0.40294793496499987
+rg58_10_75_ohm_rg58_10m_75ohm,RG58 10m 75 ohm,rg58-10m-75ohm.csv,RG58 10m,75 ohm,rg58_10_120_ohm_rg58_10m_120ohm,corrected,-100,250,0,0,-8.5,0,-0.5032083585000001
+rg58_10_120_ohm_rg58_10m_120ohm,RG58 10m 120 ohm,rg58-10m-120ohm.csv,RG58 10m,120 ohm,rg58_10_120_ohm_rg58_10m_120ohm,corrected,-100,250,0,0,-6.5,0,-0.6171614916999997
+rg58_10_200_ohm_rg58_10m_200ohm,RG58 10m 200 ohm,rg58-10m-200ohm.csv,RG58 10m,200 ohm,rg58_10_120_ohm_rg58_10m_120ohm,corrected,-100,250,0,0,-6.5,0,-0.7003698317999997
+rg58_10_470_ohm_rg58_10m_470ohm,RG58 10m 470 ohm,rg58-10m-470ohm.csv,RG58 10m,470 ohm,rg58_10_120_ohm_rg58_10m_120ohm,corrected,-100,250,0,0,-3.5,0,-0.8176042201800001
+rg58_10_open_rg58_10m_open,RG58 10m open,RG58-10M-open.csv,RG58 10m,open,rg58_10_120_ohm_rg58_10m_120ohm,corrected,-100,250,0,0,0,0,-0.913182300535

@@ -1,0 +1,9 @@
+fit_type,cable,length_m,n,slope,slope_se,slope_ci95_low,slope_ci95_high,intercept,r_squared,rmse,velocity_m_s,attenuation_proxy_db_per_m,note
+gamma_through_origin,RG58,4,10,0.9585520605,0.0073800642,0.9418583553,0.9752457657,0,0.999466421,0.01469965378,,0.04596073728,Matched load and QC-failed configurations excluded; intercept fixed at zero by theory.
+gamma_through_origin,RG58,5,10,0.944158548,0.006540138035,0.9293647558,0.9589523403,0,0.9995680968,0.01302668407,,0.04991014117,Matched load and QC-failed configurations excluded; intercept fixed at zero by theory.
+gamma_through_origin,RG58,10,10,0.8923286423,0.004222965844,0.8827762936,0.901880991,0,0.9997984136,0.008411327348,,0.04947516664,Matched load and QC-failed configurations excluded; intercept fixed at zero by theory.
+gamma_through_origin,RG179,5,10,0.7136356169,0.003154475441,0.7065001934,0.7207710403,0,0.9998181878,0.006365843905,,0.2930469657,Matched load and QC-failed configurations excluded; intercept fixed at zero by theory.
+gamma_through_origin,RG179,10,10,0.6619935222,0.009235259631,0.6411033649,0.6828836795,0,0.9981946157,0.0186370832,,0.1791462602,Matched load and QC-failed configurations excluded; intercept fixed at zero by theory.
+gamma_through_origin,RG179,15,10,0.5970584413,0.005732665126,0.5840911528,0.6100257298,0,0.9991475305,0.01156872261,,0.1493221048,Matched load and QC-failed configurations excluded; intercept fixed at zero by theory.
+round_trip_delay_linear,RG58,,3,10.19574933,0.01771605505,9.970649134,10.42084953,1.090512141,0.9999969808,0.04649878564,196160177.7,,Slope units ns/m; fit uses three group medians and therefore has one residual degree of freedom.
+round_trip_delay_linear,RG179,,3,9.431357004,0.02835075636,9.071132294,9.791581715,1.738941495,0.999990964,0.1157414782,212058561.6,,Slope units ns/m; fit uses three group medians and therefore has one residual degree of freedom.

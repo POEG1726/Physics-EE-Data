@@ -1,0 +1,2 @@
+function generator, waveform parameters:
+2.5 MHz, 1.0 Vpp amplitude, Offset 0 Vdc, Pulse Width 19.4 ns, Rising Edge 10.0 ns, Delay 0.000000 s, Load 50 Ohm, Output 50 Ohm, ON

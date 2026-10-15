@@ -1,0 +1,4 @@
+# Direct dependencies used for the verified publication build.
+numpy==2.4.1
+Pillow==12.1.0
+matplotlib==3.10.8
