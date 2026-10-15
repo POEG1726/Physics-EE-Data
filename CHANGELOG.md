@@ -174,3 +174,11 @@
 - 变更：通过 API 创建 [https://github.com/POEG1726/Physics-EE-Data](https://github.com/POEG1726/Physics-EE-Data)，配置 origin 并推送 main；补充克隆命令及发布记录，不改变任何测量数据。
 - 验证：凭据及连接账号均已核对；API 确认 private=false、visibility=public；首次远端 main `8635a1c4f1988643218e918d4cd988b88a53e156` 与本地完全一致。最终文档提交推送后再次核对远端 HEAD。
 - 提交：`a0f559fb545e6983346a7613943649ce8390b37d`。后续记录提交仅补记本哈希。
+
+## 2026-10-15 — 更新接线 SVG 与中英文 README
+
+- 文件：`README.md`、`analysis/figures/experimental_setup_schematic.svg`、`CHANGELOG.md`
+- 目的：使用提供的 refined 接线图，并以英文在前、中文在后的方式公开说明项目。
+- 变更：按原字节导入提供的 SVG；两种语言均引用该图，补充完整英文说明并保留中文内容；标明旧 PNG/draw.io 渲染器与当前接线 SVG 的关系。
+- 验证：SVG XML 和内部引用检查通过，复制文件与提供文件的 SHA-256 一致；README 语言顺序、两处接线图引用、本地链接及新增文本脱敏扫描通过；未改动测量数据。
+- 提交：变更提交后由后续记录提交补记完整哈希。

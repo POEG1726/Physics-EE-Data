@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="610" viewBox="0 0 1600 610">
+  <defs>
+    <marker id="arrow-dim-end" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 z" fill="#303b45"/>
+    </marker>
+    <marker id="arrow-dim-start" markerWidth="8" markerHeight="8" refX="1" refY="4" orient="auto-start-reverse" markerUnits="strokeWidth">
+      <path d="M8,0 L0,4 L8,8 z" fill="#303b45"/>
+    </marker>
+    <marker id="arrow-inc" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#1769aa"/>
+    </marker>
+    <marker id="arrow-ref" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,4.5 L0,10 z" fill="#9a4b2f"/>
+    </marker>
+    <marker id="arrow-note" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 z" fill="#7d8790"/>
+    </marker>
+    <style>
+      .txt { font-family: Arial, Helvetica, sans-serif; fill:#1f2933; }
+      .main { font-size:24px; }
+      .sub { font-size:20px; }
+      .small { font-size:18px; }
+      .math { font-family:"Times New Roman", Times, serif; font-style:italic; font-size:24px; fill:#1f2933; }
+      .box { fill:#fff; stroke:#3a4650; stroke-width:2.2; }
+      .wire { fill:none; stroke:#303b45; stroke-width:4; stroke-linecap:round; stroke-linejoin:round; }
+      .thin { fill:none; stroke:#303b45; stroke-width:2; }
+      .refplane { fill:none; stroke:#7d8790; stroke-width:2; stroke-dasharray:8 8; }
+    </style>
+  </defs>
+
+  <rect width="1600" height="610" fill="#ffffff"/>
+
+  <!-- Signal generator -->
+  <rect x="55" y="214" width="265" height="128" class="box"/>
+  <text x="187.5" y="254" text-anchor="middle" class="txt main">Signal generator</text>
+  <text x="187.5" y="289" text-anchor="middle" class="txt sub">SDG1062X Plus</text>
+  <text x="187.5" y="320" text-anchor="middle" class="txt sub">nominal 50 Ω source</text>
+
+  <!-- RG316 source link -->
+  <line x1="320" y1="278" x2="535" y2="278" class="wire"/>
+  <text x="427" y="232" text-anchor="middle" class="txt sub">RG316 source link</text>
+  <text x="427" y="258" text-anchor="middle" class="txt small">20 cm, 50 Ω</text>
+
+  <!-- T junction -->
+  <circle cx="555" cy="278" r="7.5" fill="#303b45"/>
+  <line x1="535" y1="278" x2="555" y2="278" class="wire"/>
+  <!-- Combined T-junction / reference-plane annotation -->
+  <text x="720" y="58" text-anchor="middle" class="txt sub">BNC T-junction / measurement reference plane</text>
+  <text x="720" y="88" text-anchor="middle" class="txt small" fill="#65717c">source side ≈ 50 Ω   |   test-cable side: Z₀ = 50 Ω or 75 Ω</text>
+  <line x1="650" y1="103" x2="565" y2="248" stroke="#7d8790" stroke-width="2.0" fill="none" marker-end="url(#arrow-note)"/>
+  <!-- Coaxial cable body -->
+  <rect x="555" y="261" width="720" height="34" rx="17" ry="17"
+        fill="#f2f4f6" stroke="#303b45" stroke-width="2.4"/>
+  <line x1="573" y1="278" x2="1257" y2="278" stroke="#303b45" stroke-width="3.2" stroke-linecap="round"/>
+  <text x="915" y="218" text-anchor="middle" class="txt main">Test coaxial cable</text>
+  <text x="915" y="246" text-anchor="middle" class="txt sub">RG58: Z₀ = 50 Ω   or   RG179: Z₀ = 75 Ω</text>
+
+  <!-- Load terminal and load -->
+  <circle cx="1275" cy="278" r="6.5" fill="#303b45"/>
+  <line x1="1275" y1="278" x2="1325" y2="278" class="wire"/>
+  <rect x="1325" y="214" width="205" height="128" class="box"/>
+  <text x="1427.5" y="264" text-anchor="middle" class="txt main">Load</text>
+  <text x="1427.5" y="309" text-anchor="middle" class="math">R<tspan baseline-shift="sub" font-size="17">L</tspan></text>
+
+  <!-- Oscilloscope branch with diagonal line -->
+  <line x1="555" y1="278" x2="470" y2="455" class="wire"/>
+  <rect x="235" y="455" width="310" height="105" class="box"/>
+  <text x="390" y="492" text-anchor="middle" class="txt main">Oscilloscope</text>
+  <text x="390" y="524" text-anchor="middle" class="txt sub">SDS824X HD, CH4</text>
+  <text x="390" y="551" text-anchor="middle" class="txt small">1 MΩ input</text>
+
+  <!-- Dimension line directly under cable -->
+  <line x1="582" y1="340" x2="1248" y2="340"
+        stroke="#303b45" stroke-width="1.8"
+        marker-start="url(#arrow-dim-start)" marker-end="url(#arrow-dim-end)"/>
+  <line x1="582" y1="300" x2="582" y2="356" class="thin"/>
+  <line x1="1248" y1="300" x2="1248" y2="356" class="thin"/>
+  <rect x="895" y="323" width="40" height="30" fill="#ffffff"/>
+  <text x="915" y="345" text-anchor="middle" class="math">L</text>
+
+  <!-- cable input / termination labels lower -->
+  <text x="582" y="390" text-anchor="start" class="txt small">cable input</text>
+  <text x="1248" y="390" text-anchor="end" class="txt small">termination</text>
+
+  <!-- Incident / reflected arrows at bottom layer -->
+  <line x1="690" y1="430" x2="1120" y2="430"
+        stroke="#1769aa" stroke-width="3.2" fill="none" marker-end="url(#arrow-inc)"/>
+  <text x="905" y="414" text-anchor="middle" class="txt sub" fill="#1769aa">incident wave, Vᵢ</text>
+
+  <line x1="1120" y1="470" x2="690" y2="470"
+        stroke="#9a4b2f" stroke-width="3.2" fill="none" marker-end="url(#arrow-ref)"/>
+  <text x="905" y="505" text-anchor="middle" class="txt sub" fill="#9a4b2f">reflected wave, Vᵣ</text>
+
+</svg>
