@@ -11,6 +11,7 @@ The essay and original Git history are excluded. The source checkout is preserve
 3. Document measurements, schemas, execution and provenance: complete.
 4. Validate numerical preservation, reproducibility, UI and privacy: complete.
 5. Commit the release and record commit hashes: complete.
+6. Create the user-approved public GitHub repository, push main and verify its SHA: complete.
 
 ## Errors
 The first independent check expected mixed-case Boolean strings; tables use uppercase TRUE/FALSE. Corrected the checker, without changing data. A shell quoting error in an inline helper produced no edits; moved the helper to a script file.

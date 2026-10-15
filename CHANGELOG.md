@@ -166,3 +166,11 @@
 - 变更：脱敏唯一标识与私人路径；保留完整采样；迁移历史记录；补充 README、数据字典和测量说明。
 - 验证：完整复算的七张数值表逐字节一致；71 个采样块、66 个配置、354 个周期、69 条 HTML 波形及 7,711 个对齐点校验通过；全部生成脚本与语法/链接检查通过，浏览器筛选、对齐、baseline 与四类导出通过；详见 `docs/PUBLICATION.md`。
 - 提交：`d61eaea782b96a0a59f07ddba897c65f0d9ccfcf`。后续记录提交仅补记本哈希与验证状态。
+
+## 2026-10-15 — 公开发布到 GitHub
+
+- 文件：`README.md`、`docs/PUBLICATION.md`、`docs/preparation/task_plan.md`、`docs/preparation/progress.md`、`CHANGELOG.md`
+- 目的：执行用户授权，建立公开远程仓库并同步已经验证的脱敏发布版。
+- 变更：通过 API 创建 [https://github.com/POEG1726/Physics-EE-Data](https://github.com/POEG1726/Physics-EE-Data)，配置 origin 并推送 main；补充克隆命令及发布记录，不改变任何测量数据。
+- 验证：凭据及连接账号均已核对；API 确认 private=false、visibility=public；首次远端 main `8635a1c4f1988643218e918d4cd988b88a53e156` 与本地完全一致。最终文档提交推送后再次核对远端 HEAD。
+- 提交：文档变更提交后由后续记录提交补记完整哈希。

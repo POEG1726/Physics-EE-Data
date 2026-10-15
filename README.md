@@ -24,6 +24,13 @@
 
 ## 本地复现
 
+公开仓库：[POEG1726/Physics-EE-Data](https://github.com/POEG1726/Physics-EE-Data)。
+
+```sh
+git clone https://github.com/POEG1726/Physics-EE-Data.git
+cd Physics-EE-Data
+```
+
 建议 Python 3.11 或更新版本；本发布版验证环境为 Python 3.13。依赖范围见 [`requirements.txt`](requirements.txt)，本次验证的固定直接依赖版本见 [`requirements-tested.txt`](requirements-tested.txt)。
 
 ```sh

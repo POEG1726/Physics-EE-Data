@@ -32,6 +32,6 @@
 
 环境：Windows、Python 3.13.7、NumPy 2.4.1、Pillow 12.1.0、Matplotlib 3.10.8。图片排版依赖字体及版本，不要求跨环境 PNG 逐字节相同。
 
-采集脚本未连接仪器，未改变仪器设置。原始工作目录中的既有内容不修改；浏览器测试产生的临时文件移至仓库外。未上传 GitHub 或设置远程仓库。
+采集脚本未连接仪器，未改变仪器设置。原始工作目录中的既有内容不修改；浏览器测试产生的临时文件移至仓库外。已于 2026-10-15 通过 API 创建[公开 GitHub 仓库](https://github.com/POEG1726/Physics-EE-Data)，配置 HTTPS origin 并推送 main；首次推送的 `8635a1c4f1988643218e918d4cd988b88a53e156` 已通过 GitHub API 与本地 HEAD 对照确认。后续文档记录随 main 同步。
 
 发布内容提交：`d61eaea782b96a0a59f07ddba897c65f0d9ccfcf`；初始基线及本记录的提交可通过 `git log --oneline` 查看。
