@@ -173,4 +173,4 @@
 - 目的：执行用户授权，建立公开远程仓库并同步已经验证的脱敏发布版。
 - 变更：通过 API 创建 [https://github.com/POEG1726/Physics-EE-Data](https://github.com/POEG1726/Physics-EE-Data)，配置 origin 并推送 main；补充克隆命令及发布记录，不改变任何测量数据。
 - 验证：凭据及连接账号均已核对；API 确认 private=false、visibility=public；首次远端 main `8635a1c4f1988643218e918d4cd988b88a53e156` 与本地完全一致。最终文档提交推送后再次核对远端 HEAD。
-- 提交：文档变更提交后由后续记录提交补记完整哈希。
+- 提交：`a0f559fb545e6983346a7613943649ce8390b37d`。后续记录提交仅补记本哈希。
